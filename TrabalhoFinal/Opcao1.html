@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Opcao1</title>
+    <link href="myStyles.css" rel="stylesheet">
+    <link href="geral.css" rel="stylesheet">
+    <style>
+    	#b{
+			background-color: gray;
+			height: 30px;
+			width: 60px;
+		}
+		
+		#trofeu, #sumiu{
+			height: 400px;
+		}
+		
+    </style>
+    
+<script>
+	function sumir (imagem){
+		document.getElementById("trofeu").src = "img/" + imagem;
+	}
+	
+</script>
+    
+</head>
+
+<body>
+
+<center><h1>Parabéns!</h1>
+	<h1>Você escolheu bem, agora pegue seu prêmio</h1>
+    <br><br>
+    <img src="img/trofeu.png" id="trofeu" onmousemove="sumir('sumiu.png')" onmouseout="sumir('trofeu.png')" alt="pegue o trofeu">
+    <br><br>
+    <a href="index.html"><input type="button" value="Home" id="b"></a>
+</center>
+
+</body>
+</html>

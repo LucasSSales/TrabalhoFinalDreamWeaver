@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>opcao3</title>
+<link href="myStyles.css" rel="stylesheet">
+<link rel="stylesheet" href="CorFormulario.css" type="text/css">
+</head>
+
+<body>
+
+<h1>Fomulário</h1><h3>(porque precisava ter um)</h3>
+
+<form>
+	
+	<fieldset>
+	
+		<fieldset>
+			<div class="campo">
+				<label for="nome">Nome</label>
+				<input type="text" id="nome" name="nome" style="width: 10em" value="">
+			</div>
+			<div class="campo">
+				<label for="snome">Sobrenome</label>
+				<input type="text" id="snome" name="snome" style="width: 10em" value="">
+			</div>
+			<div class="campo">
+				<label for="age">Idade</label>
+				<input type="number" id="age" name="age" style="width: 3em" value="">
+			</div>
+		</fieldset>	
+		
+		<fieldset>
+			<div class="campo">
+				<label for="sexo">Sexo</label>
+				<label><input type="radio" name="sexo" value="masc"> Masculino</label>
+				<label><input type="radio" name="sexo" value="fem"> Feminino</label>
+				<label><input type="radio" name="sexo" value="fem"> Gêneros não me definem</label>
+			</div>
+		</fieldset>	
+		
+		
+	  <fieldset>
+			<div class="campo">
+				<label for="email">Email</label>
+				<label><input type="email" id="email" name="email" style="width: 20em" value="" ></label>
+			</div>
+		  <div class="campo">
+			  <label for="password">Senha</label>
+				<label><input type="password" id="password" name="password" style="width: 15em" value="" ></label>
+			</div>
+		</fieldset>	
+		
+	  <fieldset>
+			<div class="campo">
+				<label for="city">Cidade</label>
+				<label><input type="text" id="city" name="city" style="width: 20em" value="" ></label>
+			</div>
+			<div class="campo">
+				<label for="state">Estado</label>
+				<label>
+					<select name="state" id="state">
+						<option value="">--</option>
+						<option value="">Alagoas</option>
+						<option value="">Pernambuco</option>
+						<option value="">Acre (sabemos que não)</option>
+						<option value="">São Paulo</option>
+						<option value="">Rio de Janeiro</option>
+						<option value="">Minas Gerais</option>
+						<option value="">Outro estado que não lembro e não ligo</option>
+					</select>
+				</label>
+			</div>
+		</fieldset>	
+		
+		<fieldset>	
+	  	<div class="campo">
+           <label for="phone">Telefone (Zap Zap)</label>
+            <label>
+                <input type="number" id="phone" name="phone" style="width: 10em" value="">
+            </label>
+        </div>
+        </fieldset>	
+        
+        <div class="campo">
+            <label for="mensagem">Mensagem (pode xingar se quiser)</label>
+            <textarea rows="6" style="width: 20em" id="mensagem" name="mensagem"></textarea>
+        </div>
+		
+		<div class="campo">
+            <label>
+                <input type="checkbox" name="terms" value="1"> Aceito os termos de compromisso que não me dei ao trabalho de ler
+            </label>
+        </div>
+		
+	  <input type="submit" value="Fingir que vai Enviar">
+	  <input type="reset" value="Limpar campos">
+      <a href="index.html"><input type="button" value="Home"></a>
+	</fieldset> 
+</form>
+</body>
+</html>

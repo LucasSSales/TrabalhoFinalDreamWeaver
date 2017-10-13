@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<script>
+
+	var inteira = true
+	function mudarLampada (tipo){
+		if(inteira){
+			document.getElementById("luz").src = "lampada-" + tipo + ".jpg";
+			if(tipo=='quebrada'){
+				inteira = false
+			}
+		}
+	}
+	
+</script>
+
+</head>
+
+<body>
+<h1>Teste do JS</h1>
+<img src="lampada-apagada.jpg" id="luz" onmousemove="mudarLampada('acesa')" onmouseout="mudarLampada('apagada')" onclick="mudarLampada('quebrada')">
+
+
+</body>
+</html>
